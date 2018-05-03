@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs on Project Flogo - Docs and Tutorials</title>
+    <link>https://tibcosoftware.github.io/flogo/labs/</link>
+    <description>Recent content in Labs on Project Flogo - Docs and Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://tibcosoftware.github.io/flogo/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial for Flogo CLI</title>
+      <link>https://tibcosoftware.github.io/flogo/labs/flogo-cli-interactive-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/labs/flogo-cli-interactive-lab/</guid>
+      <description>To check out the Flogo CLI without installing anything on your local machine check out this interactive tutorial</description>
+    </item>
+    
+    <item>
+      <title>Tutorial for Flogo Web UI</title>
+      <link>https://tibcosoftware.github.io/flogo/labs/flogo-web-interactive-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/labs/flogo-web-interactive-lab/</guid>
+      <description>To check out the Flogo Web UI without installing anything on your local machine check out this interactive tutorial</description>
+    </item>
+    
+    <item>
+      <title>Tutorial for Kubernetes</title>
+      <link>https://tibcosoftware.github.io/flogo/labs/kubernetes-demo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/labs/kubernetes-demo/</guid>
+      <description>This demo scneario will help you get up and running with a Flogo demo on Kubernetes. We&amp;rsquo;ll assume you have the following tools installed already. If that is not the case, you might want to install them first. Our Getting Started guide walks you through the installation of Go, the Flogo CLI and Go Dep
+ curl golang 1.9+ go dep flogo docker kubectl  In the scenario you&amp;rsquo;ll find a bunch of code blocks from which you can copy the code directly to your terminal.</description>
+    </item>
+    
+    <item>
+      <title>Tutorial with Serverless Framework</title>
+      <link>https://tibcosoftware.github.io/flogo/labs/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/labs/serverless/</guid>
+      <description>You can deploy your Flogo apps to, for example, AWS Lambda using the Serverless Framework.With the Serverless Framework, you can configure which events should trigger it, where to deploy it and what kind of resources it is allowed to use without going into the AWS console.
+Prerequisites In this tutorial, we’ll walk you through deploying your Flogo app to AWS Lambda using Serverless.
+You’ll need to have:
+ an app built for AWS Lambda the Serverless Framework an AWS account  Note that if you don’t have that done yet, the links will guide you through the steps</description>
+    </item>
+    
+  </channel>
+</rss>

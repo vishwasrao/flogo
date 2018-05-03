@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Triggers on Project Flogo - Docs and Tutorials</title>
+    <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/</link>
+    <description>Recent content in Triggers on Project Flogo - Docs and Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://tibcosoftware.github.io/flogo/development/webui/triggers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CLI</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/cli/</guid>
+      <description>tibco-cli This trigger provides your flogo application the ability to run as a CLI app, that is, accept input via the CLI &amp;amp; run once till completion and return the results to stdout.
+Installation flogo install github.com/TIBCOSoftware/flogo-contrib/trigger/cli  Schema Settings, Outputs and Endpoint:
+{ &amp;quot;output&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;args&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;array&amp;quot; } ], &amp;quot;handler&amp;quot;: { &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;command&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;default&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;boolean&amp;quot; } ] } }  Settings Trigger:    Output Description     args The array of arguments    Handler:    Setting Description     command The command invoked   default Indicates if its the default command    Example Configurations Triggers are configured via the triggers section of your application.</description>
+    </item>
+    
+    <item>
+      <title>CoAP</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/coap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/coap/</guid>
+      <description>tibco-coap This trigger provides your flogo application the ability to start a flow via CoAP
+Installation flogo add trigger github.com/TIBCOSoftware/flogo-contrib/trigger/coap  Schema Settings, Outputs and Endpoint:
+&amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;port&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;integer&amp;quot;, } ], &amp;quot;output&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;payload&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; } ], &amp;quot;endpoint&amp;quot;: { &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;method&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;required&amp;quot; : true }, { &amp;quot;name&amp;quot;: &amp;quot;path&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;required&amp;quot; : true } ] }  Settings Trigger:    Setting Description     port Used to override the standard CoAP server port of 5683    Endpoint:    Setting Description     method The CoAP method   path The resource path    Example Configurations Triggers are configured via the triggers.</description>
+    </item>
+    
+    <item>
+      <title>Receive Kafka Message</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/kafkasub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/kafkasub/</guid>
+      <description>tibco-kafkasub This trigger provides your flogo application with the ability to subscribe to messages from a kafka cluster and start a flow with the contents of the message. It is assumed that the messages plain text. The trigger supports TLS and SASL.
+To make a TLS connection specifiy a trust dir containing the caroots for your kafka server and a broker URL which points to an SSL port. To use SASL simply provide the username and password in the settings config.</description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/lambda/</guid>
+      <description> tibco-lambda This trigger provides your flogo application the ability to start a flow as an AWS Lambda function
+Installation flogo install trigger github.com/TIBCOSoftware/flogo-contrib/trigger/lambda  Schema Settings, Outputs:
+{ &amp;quot;settings&amp;quot;: [ ], &amp;quot;output&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;context&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;evt&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; } ] }  A sample of the context object:
+{ &amp;quot;awsRequestId&amp;quot;:&amp;quot;&amp;quot;, &amp;quot;functionName&amp;quot;:&amp;quot;&amp;quot;, &amp;quot;functionVersion&amp;quot;:&amp;quot;&amp;quot;, &amp;quot;logGroupName&amp;quot;:&amp;quot;&amp;quot;, &amp;quot;logStreamName&amp;quot;:&amp;quot;&amp;quot;, &amp;quot;memoryLimitInMB&amp;quot;:0 }  </description>
+    </item>
+    
+    <item>
+      <title>MQTT</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/mqtt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/mqtt/</guid>
+      <description>tibco-mqtt This trigger provides your flogo application the ability to start a flow via MQTT
+Installation flogo install github.com/TIBCOSoftware/flogo-contrib/trigger/mqtt  Schema Settings, Outputs and Endpoint:
+{ &amp;quot;settings&amp;quot;:[ { &amp;quot;name&amp;quot;: &amp;quot;broker&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;id&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;user&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;password&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;store&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;topic&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;qos&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;number&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;cleansess&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;boolean&amp;quot; } ], &amp;quot;endpoint&amp;quot;: { &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;topic&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; } ] } }  Example Configurations Triggers are configured via the triggers.</description>
+    </item>
+    
+    <item>
+      <title>REST</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/rest/</guid>
+      <description>tibco-rest This trigger provides your flogo application the ability to start a flow via REST over HTTP
+Installation flogo add trigger github.com/TIBCOSoftware/flogo-contrib/trigger/rest  Schema Settings, Outputs and Endpoint:
+{ &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;port&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;integer&amp;quot; } ], &amp;quot;output&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;pathParams&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;params&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;queryParams&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;params&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;header&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;params&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;content&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot; } ], &amp;quot;endpoint&amp;quot;: { &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;method&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;required&amp;quot; : true }, { &amp;quot;name&amp;quot;: &amp;quot;path&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;required&amp;quot; : true } ] } }  Settings Trigger:    Setting Description     port The port to listen on    Endpoint:    Setting Description     method The HTTP method   path The resource path    Example Configurations Triggers are configured via the triggers.</description>
+    </item>
+    
+    <item>
+      <title>Timer</title>
+      <link>https://tibcosoftware.github.io/flogo/development/webui/triggers/timer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/flogo/development/webui/triggers/timer/</guid>
+      <description>tibco-timer This trigger provides your flogo application the ability to schedule a flow via scheduling service
+Installation flogo add trigger github.com/TIBCOSoftware/flogo-contrib/trigger/timer  Schema Outputs and Handler:
+{ &amp;quot;output&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;params&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;params&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;content&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;object&amp;quot; } ], &amp;quot;handler&amp;quot;: { &amp;quot;settings&amp;quot;: [ { &amp;quot;name&amp;quot;: &amp;quot;repeating&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;false&amp;quot;, }, { &amp;quot;name&amp;quot;: &amp;quot;notImmediate&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;true&amp;quot;, }, { &amp;quot;name&amp;quot;: &amp;quot;startDate&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot;, &amp;quot;value&amp;quot;: &amp;quot;2018-01-01T12:00:00Z00:00&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;hours&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;minutes&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; }, { &amp;quot;name&amp;quot;: &amp;quot;seconds&amp;quot;, &amp;quot;type&amp;quot;: &amp;quot;string&amp;quot; } ] } }  Example Configurations Triggers are configured via the triggers.</description>
+    </item>
+    
+  </channel>
+</rss>
